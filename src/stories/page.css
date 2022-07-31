@@ -67,3 +67,8 @@ li {
 .tip-wrapper svg path {
   fill: #1ea7fd;
 }
+
+.img, video{
+  width: 200px;
+  height: 280px;
+}

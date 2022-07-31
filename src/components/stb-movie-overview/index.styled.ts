@@ -2,7 +2,10 @@ import styled from 'styled-components';
 
 export const MovieOverview = styled.div``;
 
-export const Poster = styled.img``;
+export const Poster = styled.img`
+  width: 200px;
+  height: 280px;
+`;
 
 export const Title = styled.h1`
   font-family: 'DM Sans', sans-serif;

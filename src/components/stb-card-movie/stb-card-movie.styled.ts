@@ -9,7 +9,7 @@ export const Card = styled.div.attrs({
 export const Poster = styled.img.attrs({
   role: 'stb-card-movie__poster'
 })`
-  ${tw`cursor-pointer w-full`}
+  ${tw`cursor-pointer w-full h-80`}
 `;
 
 export const Link = styled(RouterLink).attrs({

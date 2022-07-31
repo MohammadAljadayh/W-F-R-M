@@ -6,7 +6,8 @@ import nullImage from '../../assets/images/null-image.png';
 const StbMovieOverview: React.FC<i.MovieOverview> = (props) => {
   return (
     <s.MovieOverview className="flex">
-      <div className=" flex ml-3 mr-3 rounded overflow-hidden shadow-lg">
+      
+      <div className=" flex ml-3 mr-3 rounded overflow-hidden shadow-lg p-5">
         <s.Poster
           src={props.poster}
           alt={props.title}
@@ -18,28 +19,28 @@ const StbMovieOverview: React.FC<i.MovieOverview> = (props) => {
             <s.Synopsis className="mb-4">{props.plot}</s.Synopsis>    </p>
         </div>
         <div className="px-6 pt-4 pb-2">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">   <div className="mb-4">
+          <span className="inline-block bg-gray-200 rounded-2xl	 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">   <div className="mb-4">
             <b>Year</b>
             <p>{props.year}</p>
           </div></span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">   <div className="mb-4">
+          <span className="inline-block bg-gray-200 rounded-2xl	 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">   <div className="mb-4">
             <b>Rated</b>
             <p>{props.rated}</p>
           </div></span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">  <div className="mb-4">
+          <span className="inline-block bg-gray-200 rounded-2xl	 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">  <div className="mb-4">
             <b>Released</b>
             <p>{props.released}</p>
           </div>
           </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">  <div className="mb-4">
+          <span className="inline-block bg-gray-200 rounded-2xl	 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">  <div className="mb-4">
             <b>Runtime</b>
             <p>{props.runtime}</p>
           </div></span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">  <div className="mb-4">
+          <span className="inline-block bg-gray-200 rounded-2xl	 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">  <div className="mb-4">
             <b>Genre</b>
             <p>{props.genre}</p>
           </div></span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">  <div className="mb-4">
+          <span className="inline-block bg-gray-200 rounded-2xl	 px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">  <div className="mb-4">
             <b>Actors</b>
             <p>{props.actors}</p>
           </div></span>

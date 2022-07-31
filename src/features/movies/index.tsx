@@ -33,30 +33,31 @@ const Movies: React.FC = () => {
   return (
     <React.Fragment >
       <div className='m-3'>
-      <StbHeadingH3 > Movies List</StbHeadingH3>
-      <StbInfiniteScrollPagination
-        status={status}
-        total={total}
-        currentPage={page}
-        totalInResponse={totalInResponse}
-        handleLoadMore={loadMoreMovies}
-        containerClassname="grid grid-cols-5 gap-x-12 gap-y-3"
-      >
-        {
-          movies.map((movie) => (
-            <StbCardMovie
-              key={movie.imdbID}
-              id={movie.imdbID}
-              title={movie.Title}
-              poster={movie.Poster}
-              release={movie.Year}
-              href={`/watch?v=${movie.imdbID}`}
-              handlePosterClicked={() => openPreviewImage(movie.Poster, movie.Title)}
-            />
-          ))
-        }
-      </StbInfiniteScrollPagination>
-      </div>
+        <StbHeadingH3 > Movies List</StbHeadingH3>
+
+        <StbInfiniteScrollPagination
+          status={status}
+          total={total}
+          currentPage={page}
+          totalInResponse={totalInResponse}
+          handleLoadMore={loadMoreMovies}
+          containerClassname="grid grid-cols-5 gap-x-12 gap-y-3"
+        >
+          {
+            movies.map((movie) => (
+              <StbCardMovie
+                key={movie.imdbID}
+                id={movie.imdbID}
+                title={movie.Title}
+                poster={movie.Poster}
+                release={movie.Year}
+                href={`/watch?v=${movie.imdbID}`}
+                handlePosterClicked={() => openPreviewImage(movie.Poster, movie.Title)}
+              />
+            ))
+          }
+        </StbInfiniteScrollPagination>
+        </div>
     </React.Fragment>
   );
 }
