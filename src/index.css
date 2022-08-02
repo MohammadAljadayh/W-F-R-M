@@ -5,20 +5,20 @@
 
 
 
-@media (min-width: 992px) {
+@media (max-width: 1600px) {
     .grid-cols-5{
-        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+        grid-template-columns: repeat(5, minmax(0, 1fr)) ;
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 992px) {
     .grid-cols-5{
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) ;
     }
 }
 
-@media (min-width: 360px) {
+@media (max-width: 576px) {
     .grid-cols-5{
-        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); 
     }
 }
